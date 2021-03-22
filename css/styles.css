@@ -1,0 +1,18 @@
+* {/*  Varies values to fit within given size */
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-color: #264;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.6;
+}
+
+.pokedex {
+  max-width: 1000px;
+  margin: 0 auto;
+}
