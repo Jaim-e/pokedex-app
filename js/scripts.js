@@ -5,12 +5,11 @@ let pokemonList = [
 ];
 
 let text = " ";
-for (let i = 0; pokemonList[i]; i++) {
+for (let i = 0; i < pokemonList.length; i++) {
   text = " " + pokemonList[i].name + " (Height: " + pokemonList[i].height + "m)";
-
   if (pokemonList[i].height >= 0.7) {
-    document.write(text + " - Wow, that's big!" + "<br>");
+    document.write(text + " - Wow, that's big!" + "<br/>");
   } else {
-    document.write(text + "<br>");
+    document.write(text + "<br/>");
     }
 }
