@@ -1,15 +1,14 @@
 let pokemonList = [
-  { name: "Bulbasaur", height: 0.7, types: ["grass", "poison"] },
-  { name: "Charmander", height: 0.6, types: ["fire"] },
-  { name: "Squirtle", height: 0.5, types: ["water"] }
+  { name: "Squirtle", height: 0.5, type: ["Water"] },
+  { name: "Caterpie", height: 0.3, type: ["Bug"] },
+  { name: "Arcanine", height: 1.9, type: ["Fire"] }
 ];
 
-let text = " ";
-for (let i = 0; i < pokemonList.length; i++) {
-  text = " " + pokemonList[i].name + " (Height: " + pokemonList[i].height + "m)";
-  if (pokemonList[i].height >= 0.7) {
-    document.write(text + " - Wow, that's big!" + "<br/>");
+pokemonList.forEach(function(pokemon) {
+  text = pokemon.name + " is a '" + pokemon.type + "' type Pokémon and " + pokemon.height + " m tall";
+  if (pokemon.height > 1.5) {
+    document.write("<p>" + text + " - Wow, that's big!" + "<p/>");
   } else {
-    document.write(text + "<br/>");
+    document.write("<p>" + text + "<p/>");
     }
-}
+});
