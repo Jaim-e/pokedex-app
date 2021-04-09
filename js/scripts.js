@@ -1,10 +1,9 @@
 let pokemonRepository = (function () {
   let pokemonList = [
     { name: "Squirtle", height: 0.5, type: ["water"] },
-    { name: "Metapod", height: 0.7, type: ["bug"] },
-    { name: "Arcanine", height: 1.9, type: ["fire"] }
+    { name: "Arcanine", height: 1.9, type: ["fire"] },
+    { name: "Metapod", height: 0.7, type: ["bug"] }
   ];
-
   function add(item) {
     if (
       typeof item === "object" &&
@@ -20,9 +19,17 @@ let pokemonRepository = (function () {
   function getAll() {
     return pokemonList;
   }
+  function search(pokemon) {
+    if (pokemonList.find(item =>item.name === pokemon)) {
+      console.log(pokemonList.filter(item => item.name.includes(pokemon)));
+    } else {
+      console.log(pokemon + ' does not exists');
+    }
+  }
   return {
     add: add,
-    getAll: getAll
+    getAll: getAll,
+    search: search
   };
 })();
 
@@ -32,7 +39,7 @@ pokemonRepository.getAll().forEach(function(item) {
   text = item.name + " is a Pokémon of '" + item.type + "' type and is " + item.height + " m tall";
   if (item.height > 1.5) {
     document.write("<p>" + text + " - Wow, that's big!" + "<p/>");
-  } if (item.height <= 0.4) {
+  } else if (item.height <= 0.4) {
     document.write("<p>" + text + " - Well... at least it's cute!" + "<p/>");
   } else {
     document.write("<p>" + text + "<p/>");
@@ -42,3 +49,5 @@ pokemonRepository.getAll().forEach(function(item) {
 Object.keys(pokemonRepository.getAll()).forEach(function(property) {
   console.log(property + ': ' + typeof(pokemonRepository.getAll()[property]));
 });
+
+pokemonRepository.search("Pikachu");
