@@ -10,9 +10,23 @@ body {
   font-weight: 400;
   font-size: 28px;
   line-height: 1.6;
+  text-align: center;
 }
 
+/*
 .pokedex {
   max-width: 1000px;
   margin: 0 auto;
+}
+*/
+
+.pokemon-list {
+  list-style-type: none;
+}
+
+/* Button styles */
+.custom-button {
+  border: 2px brown solid;
+  height: 50px;
+  margin-bottom: 10px;
 }
