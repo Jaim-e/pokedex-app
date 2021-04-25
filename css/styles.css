@@ -30,3 +30,9 @@ body {
   height: 50px;
   margin-bottom: 10px;
 }
+
+.loadingMessage {
+  background-color: inherit;
+  color: black;
+  font-weight: bold;
+}
