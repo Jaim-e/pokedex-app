@@ -4,13 +4,15 @@
 
 /* Body styles */
 body {
-  background-color: #264;
+  background-color: #fff;
   font-family: 'Poppins', sans-serif;
   color: #fff;
   font-weight: 400;
   font-size: 28px;
   line-height: 1.6;
   text-align: center;
+  margin-top: 75px;
+  margin-bottom: 58px;
 }
 
 h1 {
@@ -29,7 +31,7 @@ h1 {
   width: 250px;
   margin-bottom: 10px;
   text-transform: uppercase;
-
+  display: inline;
 }
 
 .loadingMessage {
@@ -56,15 +58,12 @@ h1 {
 }
 
 .modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
   padding: 15px;
   width: 100%;
   max-width: 700px;
   color: black;
-  text-align: left;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .modal-close {
