@@ -1,4 +1,4 @@
-** Building of a *Pokédex* **
+**Building a *Pokédex* with JavaScript**
 
 # Project Goals
 The Objective of this project is to build a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points (Pokémon, of course) in detail. In addition to that, I used Bootstrap to perform several UI patterns such as Modals.
@@ -9,12 +9,12 @@ The App is full responsive and enabled in Chrome, Firefox, Safari, Edge, and Int
 
 # Key Features
 - Load data from an external API (https://pokeapi.co/api/v2/pokemon/?limit=150)
-- Display a list of 151 items ordered according to the number of the Pokémon
+- Display a list of 150 items ordered according to the number of the Pokémon
 - Show a modal with characteristics of each item each time a button on the list is pressed
 
 # Technical Features
-- The app have CSS styling
-- The app use additional complex UI pattern
+- The app has CSS styling
+- The app uses additional complex UI pattern
 - The JavaScript code has been formatted according to ESLint rules
 - The app has also a search bar that allows to search for a specific Pokémon by name
 - The app works in Chrome, Firefox, Safari, Edge, and Internet Explorer 11
@@ -33,7 +33,7 @@ To sum up, I put into practice data extraction from external API (parsing JSON),
 Files such as index.html, styles.css and scripts.js are stored in their minified versions in the "dist" folder.
 In order to find the raw version of these files, you can do it inside the "src" folder.
 
-Please, before finishing take a look at my <a href="https://github.com/Jaim-e/simple-js-app">Pokédex</a> App.
+Please, before finishing take a look at my <a href="https://jaim-e.github.io/simple-js-app/">Pokédex</a> App.
 
 # Acknowledgment
 Thanks to my tutor Matthew Wacha and my Mentor Martin Macharia for their support and encouragement and especially thanks to my dear study buddy Alexander Offner, that even though we have a time difference of 9 hours, he was always close to offer his valuable help ♡.
