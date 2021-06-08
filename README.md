@@ -1,15 +1,14 @@
-**Building a *Pokédex* with JavaScript**
+#Building a *Pokédex*
 
-# Project Goals
-The Objective of this project is to build a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points (Pokémon, of course) in detail. In addition to that, I used Bootstrap to perform several UI patterns such as Modals.
+The goal of this project is to build a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail. In addition to that, I used Bootstrap to perform several UI patterns such as Modals.
 
-As soon as you open the site, you should be able to view a clean, minimal list of the API data (Pokémon names), displayed in buttons that can be clicked to see more details about them, including an image of each Pokémon.
+As soon as you open the site, you should be able to view a clean and minimal list of the API data (Pokémon names), displayed in buttons that can be clicked to see more details about them including an image of each Pokémon.
 
 The App is full responsive and enabled in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.
 
 # Key Features
-- Load data from an external API (https://pokeapi.co/api/v2/pokemon/?limit=150)
-- Display a list of 150 items ordered according to the number of the Pokémon
+- Load data from an external API (https://pokeapi.co/api/v2/pokemon/?limit=151)
+- Display a list of 151 items ordered according to the number of the Pokémon
 - Show a modal with characteristics of each item each time a button on the list is pressed
 
 # Technical Features
