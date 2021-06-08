@@ -77,7 +77,7 @@ let pokemonRepository = (function () {
     hightElement.innerText = "Height: " + height/10 + "  meters";
 
     let typeElement = document.createElement("p");
-    typeElement.innerText = "Type(s): " + types;
+    typeElement.innerText = "Type: " + types;
 
     let imgElement = document.createElement("img");
     imgElement.classList.add("modal-img");
