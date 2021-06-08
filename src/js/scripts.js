@@ -1,6 +1,6 @@
 let pokemonRepository = (function () {
   let pokemonList = [];
-  let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
+  let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=151";
 
   function showLoadingMessage() {
     let div = document.querySelector(".loadingMessage");
@@ -124,7 +124,7 @@ let pokemonRepository = (function () {
         details.types.forEach(function(detailsType) {
           types.push(detailsType.type.name)
         });
-        item.types = types.join(", ");      
+        item.types = types.join(", ");
       }).catch(function (e) {
           hideLoadingMessage();
           console.error(e);
